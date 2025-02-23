@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.inputDiv {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #ffcc00;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ff9900;
+    color: #fff;
+}
+
+/* Pokemon Cards */
+.pokemonsDiv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.pokemonsDiv div {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pokemonsDiv div:hover {
+    transform: scale(1.07);
+}
+
+.pokemonsDiv img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.pokemonsDiv h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.pokemonsDiv p, .pokemonsDiv h2 {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+}
